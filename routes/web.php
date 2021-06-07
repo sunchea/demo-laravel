@@ -13,19 +13,10 @@ use App\Http\Controllers\PagesController;
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('welcome');
-});
-
-Route::get('mypage',[PagesController::class, 'myPage']);
-
-/*Route::get('/news/{number}', function($number){
-    return "Number: ".$number;
 });*/
 
-/*Route::get('/page', function(){
-    return view('page', [
-        "item" => "page",
-        "label" => "XXX"
-    ]);
-});*/
+Route::get('/page',[PagesController::class, 'myPage']);
+
+Route::get('/number', [PagesController::class, 'myNumber']);
