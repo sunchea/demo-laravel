@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\PagesController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,13 +17,15 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/news/{number}', function($number){
-    return "Number: ".$number;
-});
+Route::get('mypage',[PagesController::class, 'myPage']);
 
-Route::get('/page', function(){
+/*Route::get('/news/{number}', function($number){
+    return "Number: ".$number;
+});*/
+
+/*Route::get('/page', function(){
     return view('page', [
         "item" => "page",
         "label" => "XXX"
     ]);
-});
+});*/
