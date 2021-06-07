@@ -1,7 +1,8 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">
-            <img src="https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24"
+            <img src="https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg"
+                 alt="Logo" width="30" height="24"
                  class="d-inline-block align-text-top">
             Bootstrap
         </a>
